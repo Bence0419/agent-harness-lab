@@ -1,12 +1,12 @@
-# Citation metadata. Only information known today is included: no DOI, publication, affiliation
-# or repository URL has been invented. When the public repository exists, add `repository-code`
-# and `date-released` in the same commit that creates the v0.1.0 tag.
+# Citation metadata. No DOI, publication or affiliation is included because none exists.
 cff-version: 1.2.0
 message: "If you use Agent Harness Lab, please cite it using the metadata below."
 title: "Agent Harness Lab"
 type: software
 version: 0.1.0
 license: Apache-2.0
+date-released: "2026-11-24"
+repository-code: "https://github.com/Bence0419/agent-harness-lab"
 authors:
   - family-names: Nanasi
     given-names: Bence

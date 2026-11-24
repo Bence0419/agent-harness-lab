@@ -71,7 +71,7 @@ Task Docker images must already exist locally; AHL never pulls or builds them (y
 From a clone (the supported development workflow):
 
 ```bash
-git clone <repository-url> agent-harness-lab && cd agent-harness-lab
+git clone https://github.com/Bence0419/agent-harness-lab agent-harness-lab && cd agent-harness-lab
 uv sync
 uv run ahl version      # Agent Harness Lab 0.1.0
 uv run ahl doctor       # checks the environment; warnings are normal on a fresh machine

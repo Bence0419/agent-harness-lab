@@ -22,6 +22,10 @@ dependencies = [
     "pyyaml>=6.0",
 ]
 
+[project.urls]
+Repository = "https://github.com/Bence0419/agent-harness-lab"
+Issues = "https://github.com/Bence0419/agent-harness-lab/issues"
+
 [project.scripts]
 ahl = "agent_harness_lab.cli.app:app"
 
