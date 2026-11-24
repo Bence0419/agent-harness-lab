@@ -3,6 +3,7 @@ import os
 import subprocess
 
 import pytest
+from rich.text import Text
 from typer.testing import CliRunner
 
 from agent_harness_lab.cli import run as run_cli
@@ -57,7 +58,9 @@ def test_run_without_dry_run_fails_safely(task_repo):
 
 def test_required_options(task_repo):
     r = invoke("run", "--dry-run", "--tasks-repo", str(task_repo))
-    assert r.exit_code == 2 and "--task" in r.output
+    assert r.exit_code == 2
+    # Typer/Rich may style pieces of the option name (CI); compare the human-visible text
+    assert "--task" in Text.from_ansi(r.output).plain
 
 
 def test_dry_run_executes_nothing_and_writes_nothing(task_repo, isolate):
