@@ -1,0 +1,281 @@
+{
+  "id": "swebench-multilingual-js-ts-v1",
+  "benchmark": "SWE-bench Multilingual",
+  "swebenchVersion": "5.0.2",
+  "taskRepo": "SWE-bench/swe-bench-multilingual-tasks",
+  "taskRepoCommit": "6e08cbcd763c869abd7aae4bcb9e1b3991180777",
+  "split": "test",
+  "selection": {
+    "type": "repository",
+    "repositories": [
+      "axios/axios",
+      "babel/babel",
+      "facebook/docusaurus",
+      "immutable-js/immutable-js",
+      "mrdoob/three.js",
+      "preactjs/preact",
+      "vuejs/core"
+    ]
+  },
+  "instanceCount": 43,
+  "instances": [
+    {
+      "instanceId": "axios__axios-4731",
+      "repo": "axios/axios",
+      "baseCommit": "c30252f685e8f4326722de84923fcbc8cf557f06",
+      "split": "test"
+    },
+    {
+      "instanceId": "axios__axios-4738",
+      "repo": "axios/axios",
+      "baseCommit": "9bb016f95e6de871a44f3276fd06562704a0abb0",
+      "split": "test"
+    },
+    {
+      "instanceId": "axios__axios-5085",
+      "repo": "axios/axios",
+      "baseCommit": "85740c3e7a1fa48346dfcbd4497f463ccb1c1b05",
+      "split": "test"
+    },
+    {
+      "instanceId": "axios__axios-5316",
+      "repo": "axios/axios",
+      "baseCommit": "65e8d1e28ce829f47a837e45129730e541950d3c",
+      "split": "test"
+    },
+    {
+      "instanceId": "axios__axios-5892",
+      "repo": "axios/axios",
+      "baseCommit": "ae003913a39f3bdf9bbbd8f71a1ed681fd044d8b",
+      "split": "test"
+    },
+    {
+      "instanceId": "axios__axios-6539",
+      "repo": "axios/axios",
+      "baseCommit": "c6cce43cd94489f655f4488c5a50ecaf781c94f2",
+      "split": "test"
+    },
+    {
+      "instanceId": "babel__babel-13928",
+      "repo": "babel/babel",
+      "baseCommit": "5134505bf93013c5fa7df66704df8d04becb7f7d",
+      "split": "test"
+    },
+    {
+      "instanceId": "babel__babel-14532",
+      "repo": "babel/babel",
+      "baseCommit": "fbd065256ca00d68089293ad48ea9aeba5481914",
+      "split": "test"
+    },
+    {
+      "instanceId": "babel__babel-15445",
+      "repo": "babel/babel",
+      "baseCommit": "49e4855c10d8f76faf477f2ceb5ecbdbe2c849a3",
+      "split": "test"
+    },
+    {
+      "instanceId": "babel__babel-15649",
+      "repo": "babel/babel",
+      "baseCommit": "35116224d21e16fb863293f9011d1d6c97ed0bf4",
+      "split": "test"
+    },
+    {
+      "instanceId": "babel__babel-16130",
+      "repo": "babel/babel",
+      "baseCommit": "4e6e3cf1395cafd27f28f113918034232c6c1db5",
+      "split": "test"
+    },
+    {
+      "instanceId": "facebook__docusaurus-10130",
+      "repo": "facebook/docusaurus",
+      "baseCommit": "02e38d8ccf7811af27a9c15ddbadf4d26cfc0eab",
+      "split": "test"
+    },
+    {
+      "instanceId": "facebook__docusaurus-10309",
+      "repo": "facebook/docusaurus",
+      "baseCommit": "5e9e1d051b2217b95498ecbc10f7e33f64e7a4d3",
+      "split": "test"
+    },
+    {
+      "instanceId": "facebook__docusaurus-8927",
+      "repo": "facebook/docusaurus",
+      "baseCommit": "41f1c1e3c26ad1e24acd3306077e2534dd8fa0db",
+      "split": "test"
+    },
+    {
+      "instanceId": "facebook__docusaurus-9183",
+      "repo": "facebook/docusaurus",
+      "baseCommit": "b96004e77ebfb23e7349fa495d2177008186bd42",
+      "split": "test"
+    },
+    {
+      "instanceId": "facebook__docusaurus-9897",
+      "repo": "facebook/docusaurus",
+      "baseCommit": "0589b1475d56b0b541348aa56f201ec7c56c56d5",
+      "split": "test"
+    },
+    {
+      "instanceId": "immutable-js__immutable-js-2005",
+      "repo": "immutable-js/immutable-js",
+      "baseCommit": "77434b3cbbc8ee21206f4cc6965e1c9b09cc92b6",
+      "split": "test"
+    },
+    {
+      "instanceId": "immutable-js__immutable-js-2006",
+      "repo": "immutable-js/immutable-js",
+      "baseCommit": "493afba6ec17d9c999dc5a15ac80c71c6bdba1c3",
+      "split": "test"
+    },
+    {
+      "instanceId": "mrdoob__three.js-25687",
+      "repo": "mrdoob/three.js",
+      "baseCommit": "114134e195a451fdbaa8d2e9492d869d5c853814",
+      "split": "test"
+    },
+    {
+      "instanceId": "mrdoob__three.js-26589",
+      "repo": "mrdoob/three.js",
+      "baseCommit": "8d9f8d50b923d5f8a673590ae138bc5d86a3a256",
+      "split": "test"
+    },
+    {
+      "instanceId": "mrdoob__three.js-27395",
+      "repo": "mrdoob/three.js",
+      "baseCommit": "b99b3fd955864f534b1e2649518112f7e50fef21",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-2757",
+      "repo": "preactjs/preact",
+      "baseCommit": "b17a932342bfdeeaf1dc0fbe4f436c83e258d6c8",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-2896",
+      "repo": "preactjs/preact",
+      "baseCommit": "a9f7e676dc03b5008b8483e0937fc27c1af8287f",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-2927",
+      "repo": "preactjs/preact",
+      "baseCommit": "ee76c1eb169897412501d86fbe40122b34cd2e8d",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-3010",
+      "repo": "preactjs/preact",
+      "baseCommit": "c12331064f4ea967641cd5e419204422af050fbb",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-3062",
+      "repo": "preactjs/preact",
+      "baseCommit": "7556b61bd0d9f72bbd906c3abaebf2b1c9aeacbf",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-3345",
+      "repo": "preactjs/preact",
+      "baseCommit": "e0e17046753fe09881dfb8d5a69b44933d1fa1ea",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-3454",
+      "repo": "preactjs/preact",
+      "baseCommit": "00c8d1ff1498084c15408cf0014d4c7facdb5dd7",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-3562",
+      "repo": "preactjs/preact",
+      "baseCommit": "0b9a9275b47e446106e6e97c78011896f7db2a61",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-3567",
+      "repo": "preactjs/preact",
+      "baseCommit": "c77e6284c199761d59467d8cc596a2f03540e72c",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-3689",
+      "repo": "preactjs/preact",
+      "baseCommit": "9457b221fdacd1052ffdb385918e1bab4b10e833",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-3739",
+      "repo": "preactjs/preact",
+      "baseCommit": "2cafedee2ddf7c73795e887ef1970df4be2bca90",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-3763",
+      "repo": "preactjs/preact",
+      "baseCommit": "e968a5a4000dfa9bec7e8d7b26543b23def6d29d",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-4152",
+      "repo": "preactjs/preact",
+      "baseCommit": "9c5a82efcc3dcbd0035c694817a3022d81264687",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-4182",
+      "repo": "preactjs/preact",
+      "baseCommit": "66cb6a78776b263a2fe4d1283426e699961095d2",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-4245",
+      "repo": "preactjs/preact",
+      "baseCommit": "13b0afb7a28adb3149d7125fb2b9c16edbcf8e94",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-4316",
+      "repo": "preactjs/preact",
+      "baseCommit": "b820d8b73eade8bc5b3fbf7e5fe0dd5150de80e2",
+      "split": "test"
+    },
+    {
+      "instanceId": "preactjs__preact-4436",
+      "repo": "preactjs/preact",
+      "baseCommit": "db0f4f2e7a2338ea40050f623f05505a798fc1a4",
+      "split": "test"
+    },
+    {
+      "instanceId": "vuejs__core-11589",
+      "repo": "vuejs/core",
+      "baseCommit": "3653bc0f45d6fedf84e29b64ca52584359c383c0",
+      "split": "test"
+    },
+    {
+      "instanceId": "vuejs__core-11739",
+      "repo": "vuejs/core",
+      "baseCommit": "cb843e0be31f9e563ccfc30eca0c06f2a224b505",
+      "split": "test"
+    },
+    {
+      "instanceId": "vuejs__core-11870",
+      "repo": "vuejs/core",
+      "baseCommit": "67d6596d40b1807b9cd8eb0d9282932ea77be3c0",
+      "split": "test"
+    },
+    {
+      "instanceId": "vuejs__core-11899",
+      "repo": "vuejs/core",
+      "baseCommit": "706d4ac1d0210b2d9134b3228280187fe02fc971",
+      "split": "test"
+    },
+    {
+      "instanceId": "vuejs__core-11915",
+      "repo": "vuejs/core",
+      "baseCommit": "d0b513eb463f580e29378e43d112ff6859aa366e",
+      "split": "test"
+    }
+  ]
+}

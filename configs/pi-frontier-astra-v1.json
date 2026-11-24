@@ -1,0 +1,26 @@
+{
+  "id": "pi-frontier-astra-v1",
+  "description": "Pi baseline harness transferred from GPT-5.4-mini to GPT-6 Astra",
+  "comparisonBaseline": "baseline-v1",
+  "piVersion": "1.0.2",
+  "provider": "openai",
+  "model": "gpt-6-astra",
+  "modelPinning": "alias",
+  "thinking": "medium",
+  "execution": {
+    "print": true,
+    "mode": "json",
+    "session": false
+  },
+  "systemPrompt": "pi-default",
+  "tools": [
+    "read",
+    "bash",
+    "edit",
+    "write"
+  ],
+  "extensions": false,
+  "skills": false,
+  "promptTemplates": false,
+  "contextFiles": false
+}

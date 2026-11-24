@@ -1,0 +1,17 @@
+{
+  "id": "js-bugfix-003",
+  "repository": "js-bugfix-003",
+  "startCommit": "f210cebf70a3912e1784e9044b8e810a663a29f9",
+  "startTag": "task-start-v1",
+  "prompt": "The invoice total calculation returns an incorrect result for one of the supported countries. Fix the bug without changing the public API. Do not modify the tests. Run the test suite and ensure all tests pass.",
+  "verification": {
+    "command": "npm test",
+    "preExpectedExitCode": 1,
+    "postExpectedExitCode": 0
+  },
+  "heldOutVerification": {
+    "script": "experiments/verifiers/js-bugfix-003.js",
+    "preExpectedExitCode": 1,
+    "postExpectedExitCode": 0
+  }
+}

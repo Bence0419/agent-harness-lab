@@ -1,0 +1,54 @@
+{
+  "id": "baseline-v1-5x5",
+  "description": "Repeated baseline evaluation: 5 tasks x 5 runs",
+  "agentBaseline": "baseline-v1",
+  "executionSuite": "evaluation-suite-v1",
+  "analysisSuite": "evaluation-suite-v1.1",
+  "repetitionsPerTask": 5,
+  "taskCount": 5,
+  "runCount": 25,
+  "tasks": [
+    "js-bugfix-001",
+    "js-bugfix-002",
+    "js-bugfix-003",
+    "js-bugfix-004",
+    "js-bugfix-005"
+  ],
+  "runs": {
+    "js-bugfix-001": [
+      "js-bugfix-001-20261021T095328Z",
+      "js-bugfix-001-20261021T095419Z",
+      "js-bugfix-001-20261021T095506Z",
+      "js-bugfix-001-20261021T095555Z",
+      "js-bugfix-001-20261021T095638Z"
+    ],
+    "js-bugfix-002": [
+      "js-bugfix-002-20261021T095339Z",
+      "js-bugfix-002-20261021T095427Z",
+      "js-bugfix-002-20261021T095517Z",
+      "js-bugfix-002-20261021T095603Z",
+      "js-bugfix-002-20261021T095648Z"
+    ],
+    "js-bugfix-003": [
+      "js-bugfix-003-20261021T095347Z",
+      "js-bugfix-003-20261021T095436Z",
+      "js-bugfix-003-20261021T095525Z",
+      "js-bugfix-003-20261021T095612Z",
+      "js-bugfix-003-20261021T095655Z"
+    ],
+    "js-bugfix-004": [
+      "js-bugfix-004-20261021T095356Z",
+      "js-bugfix-004-20261021T095443Z",
+      "js-bugfix-004-20261021T095533Z",
+      "js-bugfix-004-20261021T095619Z",
+      "js-bugfix-004-20261021T095703Z"
+    ],
+    "js-bugfix-005": [
+      "js-bugfix-005-20261021T095410Z",
+      "js-bugfix-005-20261021T095452Z",
+      "js-bugfix-005-20261021T095545Z",
+      "js-bugfix-005-20261021T095628Z",
+      "js-bugfix-005-20261021T095715Z"
+    ]
+  }
+}

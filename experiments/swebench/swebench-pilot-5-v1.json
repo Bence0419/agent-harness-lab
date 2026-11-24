@@ -1,0 +1,64 @@
+{
+  "id": "swebench-pilot-5-v1",
+  "benchmark": "SWE-bench Multilingual",
+  "swebenchVersion": "5.0.2",
+  "taskRepo": "SWE-bench/swe-bench-multilingual-tasks",
+  "taskRepoCommit": "6e08cbcd763c869abd7aae4bcb9e1b3991180777",
+  "split": "test",
+  "agentBaseline": "baseline-v1",
+  "integration": "swebench-integration-v1",
+  "purpose": "Gold-validated multi-repository pilot subset",
+  "instanceCount": 5,
+  "instances": [
+    {
+      "instanceId": "axios__axios-5892",
+      "repo": "axios/axios",
+      "baseCommit": "ae003913a39f3bdf9bbbd8f71a1ed681fd044d8b",
+      "image": "swebench/sweb.eval.x86_64.axios_1776_axios-5892:latest",
+      "goldValidation": {
+        "runId": "pilot-gold-axios-5892",
+        "resolved": true
+      }
+    },
+    {
+      "instanceId": "babel__babel-15649",
+      "repo": "babel/babel",
+      "baseCommit": "35116224d21e16fb863293f9011d1d6c97ed0bf4",
+      "image": "swebench/sweb.eval.x86_64.babel_1776_babel-15649:latest",
+      "goldValidation": {
+        "runId": "pilot-gold-babel-15649",
+        "resolved": true
+      }
+    },
+    {
+      "instanceId": "facebook__docusaurus-9897",
+      "repo": "facebook/docusaurus",
+      "baseCommit": "0589b1475d56b0b541348aa56f201ec7c56c56d5",
+      "image": "swebench/sweb.eval.x86_64.facebook_1776_docusaurus-9897:latest",
+      "goldValidation": {
+        "runId": "pilot-gold-docusaurus-9897",
+        "resolved": true
+      }
+    },
+    {
+      "instanceId": "preactjs__preact-3345",
+      "repo": "preactjs/preact",
+      "baseCommit": "e0e17046753fe09881dfb8d5a69b44933d1fa1ea",
+      "image": "swebench/sweb.eval.x86_64.preactjs_1776_preact-3345:latest",
+      "goldValidation": {
+        "runId": "pilot-gold-preact-3345",
+        "resolved": true
+      }
+    },
+    {
+      "instanceId": "vuejs__core-11870",
+      "repo": "vuejs/core",
+      "baseCommit": "67d6596d40b1807b9cd8eb0d9282932ea77be3c0",
+      "image": "swebench/sweb.eval.x86_64.vuejs_1776_core-11870:latest",
+      "goldValidation": {
+        "runId": "pilot-gold-vue-11870",
+        "resolved": true
+      }
+    }
+  ]
+}

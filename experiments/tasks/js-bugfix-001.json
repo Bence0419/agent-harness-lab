@@ -1,0 +1,12 @@
+{
+  "id": "js-bugfix-001",
+  "repository": "js-bugfix-001",
+  "startCommit": "2420fa78f4d7c33d72cee7df5bc5bfb3532b5ea3",
+  "startTag": "task-start-v1",
+  "prompt": "The discount calculation returns incorrect results for some inputs. Fix the bug without changing the public API. Do not modify the tests. Run the test suite and ensure all tests pass.",
+  "verification": {
+    "command": "npm test",
+    "preExpectedExitCode": 1,
+    "postExpectedExitCode": 0
+  }
+}

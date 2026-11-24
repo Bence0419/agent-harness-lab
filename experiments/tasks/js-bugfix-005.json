@@ -1,0 +1,17 @@
+{
+  "id": "js-bugfix-005",
+  "repository": "js-bugfix-005",
+  "startCommit": "4ca6c34f896390a75ea9d32543bc3b15add0d2a9",
+  "startTag": "task-start-v1",
+  "prompt": "Feature flag resolution returns incorrect results for some configuration combinations. Fix the bug without changing the public API. Do not modify the tests. Run the test suite and ensure all tests pass.",
+  "verification": {
+    "command": "npm test",
+    "preExpectedExitCode": 1,
+    "postExpectedExitCode": 0
+  },
+  "heldOutVerification": {
+    "script": "experiments/verifiers/js-bugfix-005.js",
+    "preExpectedExitCode": 1,
+    "postExpectedExitCode": 0
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "js-bugfix-002",
+  "repository": "js-bugfix-002",
+  "startCommit": "4daa696b35855cd6aa00ed68b8a06c7709c93dd2",
+  "startTag": "task-start-v1",
+  "prompt": "The shipping cost calculation returns incorrect results for some boundary inputs. Fix the bug without changing the public API. Do not modify the tests. Run the test suite and ensure all tests pass.",
+  "verification": {
+    "command": "npm test",
+    "preExpectedExitCode": 1,
+    "postExpectedExitCode": 0
+  },
+  "heldOutVerification": {
+    "script": "experiments/verifiers/js-bugfix-002.js",
+    "preExpectedExitCode": 1,
+    "postExpectedExitCode": 0
+  }
+}

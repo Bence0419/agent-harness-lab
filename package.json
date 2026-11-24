@@ -1,0 +1,13 @@
+{
+  "name": "agent-harness-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Research environment for controlled experiments with a Pi-based coding agent harness.",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "1.0.2",
+    "@opencode/cli": "2.2.0"
+  }
+}

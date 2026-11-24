@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12"]  # the version the project is developed and tested on
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Install project
+        run: uv sync --locked --python ${{ matrix.python-version }}
+      - name: Lint
+        run: uv run ruff check .
+      - name: Test
+        # Needs no Docker, no API key, no network, no Pi/OpenCode, no task repository, no
+        # evaluator. The Docker / real-evaluator / real-data suites are opt-in and not run here.
+        run: uv run pytest
+      - name: Public-release scan
+        run: uv run python tools/check_public_release.py
+
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Build wheel and sdist
+        run: uv build --out-dir dist
+      - name: Smoke-test the wheel in a clean environment
+        run: |
+          uv venv --python 3.12 /tmp/ahl-smoke
+          uv pip install --python /tmp/ahl-smoke/bin/python dist/*.whl
+          cd "$(mktemp -d)"
+          /tmp/ahl-smoke/bin/ahl --help
+          /tmp/ahl-smoke/bin/ahl version | grep -x "Agent Harness Lab 0.1.0"
+          /tmp/ahl-smoke/bin/ahl doctor

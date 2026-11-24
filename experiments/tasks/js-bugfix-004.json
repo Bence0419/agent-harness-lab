@@ -1,0 +1,17 @@
+{
+  "id": "js-bugfix-004",
+  "repository": "js-bugfix-004",
+  "startCommit": "69d27b050270b35f5d25762bad640344ef1846d2",
+  "startTag": "task-start-v1",
+  "prompt": "The checkout total calculation returns incorrect results when discount coupons are used. Fix the bug without changing the public API. Do not modify the tests. Run the test suite and ensure all tests pass.",
+  "verification": {
+    "command": "npm test",
+    "preExpectedExitCode": 1,
+    "postExpectedExitCode": 0
+  },
+  "heldOutVerification": {
+    "script": "experiments/verifiers/js-bugfix-004.js",
+    "preExpectedExitCode": 1,
+    "postExpectedExitCode": 0
+  }
+}

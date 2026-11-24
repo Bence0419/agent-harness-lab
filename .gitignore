@@ -1,0 +1,32 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Logs and temporary files
+*.log
+tmp/
+.cache/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Experiment outputs that should not be committed by default
+results/raw/
+results/experiments/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/

@@ -1,0 +1,351 @@
+{
+  "evaluation": {
+    "id": "baseline-v1-5x5",
+    "description": "Repeated baseline evaluation: 5 tasks x 5 runs",
+    "agentBaseline": "baseline-v1",
+    "executionSuite": "evaluation-suite-v1",
+    "analysisSuite": "evaluation-suite-v1.1",
+    "taskCount": 5,
+    "repetitionsPerTask": 5,
+    "runCount": 25
+  },
+  "overall": {
+    "runs": 25,
+    "success": {
+      "count": 25,
+      "rate": 1
+    },
+    "heldOut": {
+      "configuredRuns": 20,
+      "successCount": 20,
+      "successRate": 1
+    },
+    "selfVerification": {
+      "count": 25,
+      "rate": 1
+    },
+    "durationSeconds": {
+      "mean": 9.44,
+      "median": 9,
+      "min": 7,
+      "max": 15,
+      "stddev": 2.2285
+    },
+    "toolCalls": {
+      "mean": 9.32,
+      "median": 9,
+      "min": 6,
+      "max": 14,
+      "stddev": 1.9125
+    },
+    "totalTokens": {
+      "mean": 12834.8,
+      "median": 10846,
+      "min": 8975,
+      "max": 26705,
+      "stddev": 4252.1036
+    },
+    "costUSD": {
+      "mean": 0.0053,
+      "median": 0.0049,
+      "min": 0.0033,
+      "max": 0.0112,
+      "stddev": 0.0017,
+      "total": 0.133734
+    },
+    "trajectory": {
+      "uniqueToolSequences": 12,
+      "dominantToolSequenceCount": 5,
+      "dominantToolSequenceRate": 0.2,
+      "toolSequences": {
+        "bash>bash>read>read>read>bash>edit>bash": 1,
+        "bash>bash>read>read>read>edit>bash": 3,
+        "bash>bash>read>read>edit>bash": 1,
+        "bash>bash>read>read>read>read>edit>bash": 5,
+        "bash>bash>read>read>read>read>read>edit>bash": 5,
+        "bash>bash>read>read>read>read>read>edit>bash>read>bash": 1,
+        "bash>bash>read>read>read>read>read>read>bash>edit>bash": 3,
+        "bash>bash>read>read>read>read>read>read>edit>bash": 2,
+        "bash>bash>read>read>read>read>read>read>edit>bash>edit>edit>bash": 1,
+        "bash>bash>read>read>read>read>read>read>edit>bash>bash": 1,
+        "bash>bash>read>read>read>read>read>read>read>edit>bash": 1,
+        "bash>bash>read>read>read>read>read>read>read>bash>edit>edit>edit>bash": 1
+      }
+    }
+  },
+  "perTask": {
+    "js-bugfix-001": {
+      "runs": 5,
+      "success": {
+        "count": 5,
+        "rate": 1
+      },
+      "heldOut": {
+        "configuredRuns": 0,
+        "successCount": 0,
+        "successRate": null
+      },
+      "selfVerification": {
+        "count": 5,
+        "rate": 1
+      },
+      "durationSeconds": {
+        "mean": 9.2,
+        "median": 9,
+        "min": 8,
+        "max": 11,
+        "stddev": 1.1662
+      },
+      "toolCalls": {
+        "mean": 7,
+        "median": 7,
+        "min": 6,
+        "max": 8,
+        "stddev": 0.6325
+      },
+      "totalTokens": {
+        "mean": 10099.6,
+        "median": 9619,
+        "min": 8975,
+        "max": 12050,
+        "stddev": 1064.4346
+      },
+      "costUSD": {
+        "mean": 0.0039,
+        "median": 0.004,
+        "min": 0.0033,
+        "max": 0.0045,
+        "stddev": 0.0005,
+        "total": 0.019384
+      },
+      "trajectory": {
+        "uniqueToolSequences": 3,
+        "dominantToolSequenceCount": 3,
+        "dominantToolSequenceRate": 0.6,
+        "toolSequences": {
+          "bash>bash>read>read>read>bash>edit>bash": 1,
+          "bash>bash>read>read>read>edit>bash": 3,
+          "bash>bash>read>read>edit>bash": 1
+        }
+      }
+    },
+    "js-bugfix-002": {
+      "runs": 5,
+      "success": {
+        "count": 5,
+        "rate": 1
+      },
+      "heldOut": {
+        "configuredRuns": 5,
+        "successCount": 5,
+        "successRate": 1
+      },
+      "selfVerification": {
+        "count": 5,
+        "rate": 1
+      },
+      "durationSeconds": {
+        "mean": 7.8,
+        "median": 8,
+        "min": 7,
+        "max": 8,
+        "stddev": 0.4
+      },
+      "toolCalls": {
+        "mean": 8,
+        "median": 8,
+        "min": 8,
+        "max": 8,
+        "stddev": 0
+      },
+      "totalTokens": {
+        "mean": 10344.8,
+        "median": 10280,
+        "min": 10071,
+        "max": 10846,
+        "stddev": 267.532
+      },
+      "costUSD": {
+        "mean": 0.0049,
+        "median": 0.0049,
+        "min": 0.0047,
+        "max": 0.0051,
+        "stddev": 0.0001,
+        "total": 0.024612
+      },
+      "trajectory": {
+        "uniqueToolSequences": 1,
+        "dominantToolSequenceCount": 5,
+        "dominantToolSequenceRate": 1,
+        "toolSequences": {
+          "bash>bash>read>read>read>read>edit>bash": 5
+        }
+      }
+    },
+    "js-bugfix-003": {
+      "runs": 5,
+      "success": {
+        "count": 5,
+        "rate": 1
+      },
+      "heldOut": {
+        "configuredRuns": 5,
+        "successCount": 5,
+        "successRate": 1
+      },
+      "selfVerification": {
+        "count": 5,
+        "rate": 1
+      },
+      "durationSeconds": {
+        "mean": 7.6,
+        "median": 7,
+        "min": 7,
+        "max": 9,
+        "stddev": 0.8
+      },
+      "toolCalls": {
+        "mean": 9,
+        "median": 9,
+        "min": 9,
+        "max": 9,
+        "stddev": 0
+      },
+      "totalTokens": {
+        "mean": 10491.2,
+        "median": 10561,
+        "min": 9756,
+        "max": 10966,
+        "stddev": 397.5914
+      },
+      "costUSD": {
+        "mean": 0.0044,
+        "median": 0.0045,
+        "min": 0.0039,
+        "max": 0.0048,
+        "stddev": 0.0003,
+        "total": 0.021929
+      },
+      "trajectory": {
+        "uniqueToolSequences": 1,
+        "dominantToolSequenceCount": 5,
+        "dominantToolSequenceRate": 1,
+        "toolSequences": {
+          "bash>bash>read>read>read>read>read>edit>bash": 5
+        }
+      }
+    },
+    "js-bugfix-004": {
+      "runs": 5,
+      "success": {
+        "count": 5,
+        "rate": 1
+      },
+      "heldOut": {
+        "configuredRuns": 5,
+        "successCount": 5,
+        "successRate": 1
+      },
+      "selfVerification": {
+        "count": 5,
+        "rate": 1
+      },
+      "durationSeconds": {
+        "mean": 11,
+        "median": 11,
+        "min": 9,
+        "max": 14,
+        "stddev": 1.8974
+      },
+      "toolCalls": {
+        "mean": 10.8,
+        "median": 11,
+        "min": 10,
+        "max": 11,
+        "stddev": 0.4
+      },
+      "totalTokens": {
+        "mean": 16901.6,
+        "median": 17556,
+        "min": 11894,
+        "max": 19208,
+        "stddev": 2586.2235
+      },
+      "costUSD": {
+        "mean": 0.0061,
+        "median": 0.0063,
+        "min": 0.0052,
+        "max": 0.0067,
+        "stddev": 0.0006,
+        "total": 0.030562
+      },
+      "trajectory": {
+        "uniqueToolSequences": 3,
+        "dominantToolSequenceCount": 3,
+        "dominantToolSequenceRate": 0.6,
+        "toolSequences": {
+          "bash>bash>read>read>read>read>read>edit>bash>read>bash": 1,
+          "bash>bash>read>read>read>read>read>read>bash>edit>bash": 3,
+          "bash>bash>read>read>read>read>read>read>edit>bash": 1
+        }
+      }
+    },
+    "js-bugfix-005": {
+      "runs": 5,
+      "success": {
+        "count": 5,
+        "rate": 1
+      },
+      "heldOut": {
+        "configuredRuns": 5,
+        "successCount": 5,
+        "successRate": 1
+      },
+      "selfVerification": {
+        "count": 5,
+        "rate": 1
+      },
+      "durationSeconds": {
+        "mean": 11.6,
+        "median": 10,
+        "min": 9,
+        "max": 15,
+        "stddev": 2.4166
+      },
+      "toolCalls": {
+        "mean": 11.8,
+        "median": 11,
+        "min": 10,
+        "max": 14,
+        "stddev": 1.4697
+      },
+      "totalTokens": {
+        "mean": 16336.8,
+        "median": 14035,
+        "min": 11058,
+        "max": 26705,
+        "stddev": 5862.9305
+      },
+      "costUSD": {
+        "mean": 0.0074,
+        "median": 0.0057,
+        "min": 0.0053,
+        "max": 0.0112,
+        "stddev": 0.0024,
+        "total": 0.037248
+      },
+      "trajectory": {
+        "uniqueToolSequences": 5,
+        "dominantToolSequenceCount": 1,
+        "dominantToolSequenceRate": 0.2,
+        "toolSequences": {
+          "bash>bash>read>read>read>read>read>read>edit>bash": 1,
+          "bash>bash>read>read>read>read>read>read>edit>bash>edit>edit>bash": 1,
+          "bash>bash>read>read>read>read>read>read>edit>bash>bash": 1,
+          "bash>bash>read>read>read>read>read>read>read>edit>bash": 1,
+          "bash>bash>read>read>read>read>read>read>read>bash>edit>edit>edit>bash": 1
+        }
+      }
+    }
+  }
+}

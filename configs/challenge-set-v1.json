@@ -1,0 +1,24 @@
+{
+  "id": "challenge-set-v1",
+  "purpose": "Outcome-blind multilingual challenge set for Pi vs OpenCode on GPT-6 Astra",
+  "selectionRule": "One unseen task per selected repository, choosing the task with the longest problem statement by word count. Previously evaluated pilot tasks are excluded.",
+  "ecosystems": {
+    "javascript-typescript": [
+      "babel__babel-15445",
+      "immutable-js__immutable-js-2005",
+      "mrdoob__three.js-26589"
+    ],
+    "java": [
+      "apache__lucene-12212",
+      "apache__druid-15402",
+      "projectlombok__lombok-3602"
+    ]
+  },
+  "pilotTasksExcluded": [
+    "axios__axios-5892",
+    "babel__babel-15649",
+    "facebook__docusaurus-9897",
+    "preactjs__preact-3345",
+    "vuejs__core-11870"
+  ]
+}

@@ -1,0 +1,38 @@
+# The smallest useful experiment: one task, one harness, one model, one repetition.
+#
+#   ahl benchmark examples/minimal.yaml --dry-run      # validate and pre-flight; runs nothing
+#   AHL_ENABLE_REAL_EXECUTION=1 ahl benchmark examples/minimal.yaml    # real run (costs money)
+#
+# The model's credential is read from the environment variable named by its provider
+# (OPENAI_API_KEY for the built-in "openai" provider). Never put a key in this file.
+schema_version: ahl-experiment-v1
+
+experiment:
+  name: minimal
+  description: One Pi run on one SWE-bench Multilingual task, scored by the official evaluator.
+  purpose: smoke
+
+benchmark:
+  name: swebench-multilingual
+  # Pin the task repository: the checkout must be exactly this commit and clean.
+  task_repository_commit: 6e08cbcd763c869abd7aae4bcb9e1b3991180777
+
+tasks:
+  - babel__babel-15445
+
+harnesses:
+  - pi
+
+models:
+  - provider: openai
+    model: gpt-6-astra
+    reasoning: medium
+
+repetitions: 1
+
+execution:
+  timeout_seconds: 3600
+  network: restricted-provider
+
+evaluation:
+  enabled: true

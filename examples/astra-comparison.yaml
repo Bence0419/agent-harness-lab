@@ -1,0 +1,56 @@
+# Conceptual re-expression of the Pi vs OpenCode comparison on GPT-6 Astra.
+#
+# !! This is NOT the original study and it does not import its results. !!
+# The original 11-task study (docs/research-v1.md; results/raw) was produced by the frozen Bash
+# runners and stays untouched. Executing THIS file would create NEW runs (22 of them) and cost
+# money: it is provided to show how such a study is described, not to be run casually.
+#
+#   ahl benchmark examples/astra-comparison.yaml --dry-run      # safe: executes nothing
+#
+# The 11 tasks are the 5 pilot tasks plus the 6 tasks of configs/challenge-set-v1.json; the
+# task repository commit is the one the frozen study used.
+schema_version: ahl-experiment-v1
+
+experiment:
+  name: astra-comparison
+  description: >-
+    Pi vs OpenCode on 11 SWE-bench Multilingual tasks with GPT-6 Astra (medium reasoning),
+    one attempt per task. A NEW execution of the same design, not the original study.
+  purpose: comparison
+
+benchmark:
+  name: swebench-multilingual
+  task_repository_commit: 6e08cbcd763c869abd7aae4bcb9e1b3991180777
+
+tasks:
+  # pilot tasks
+  - axios__axios-5892
+  - babel__babel-15649
+  - facebook__docusaurus-9897
+  - preactjs__preact-3345
+  - vuejs__core-11870
+  # configs/challenge-set-v1.json
+  - apache__druid-15402
+  - apache__lucene-12212
+  - babel__babel-15445
+  - immutable-js__immutable-js-2005
+  - mrdoob__three.js-26589
+  - projectlombok__lombok-3602
+
+harnesses:
+  - pi
+  - opencode
+
+models:
+  - provider: openai
+    model: gpt-6-astra
+    reasoning: medium
+
+repetitions: 1
+
+execution:
+  timeout_seconds: 3600
+  network: restricted-provider
+
+evaluation:
+  enabled: true

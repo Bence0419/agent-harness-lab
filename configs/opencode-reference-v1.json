@@ -1,0 +1,33 @@
+{
+  "id": "opencode-reference-v1",
+  "description": "Native OpenCode reference harness for comparison with Pi baseline and later Pi iterations",
+  "opencode": {
+    "package": "@opencode/cli",
+    "version": "2.2.0",
+    "agent": "build",
+    "standalone": true,
+    "autoApprove": true,
+    "outputFormat": "json"
+  },
+  "model": {
+    "provider": "openai",
+    "name": "gpt-5.4-mini",
+    "variant": "medium"
+  },
+  "harness": {
+    "nativeAgents": true,
+    "nativeTools": true,
+    "nativeSystemPrompt": true,
+    "nativeContextManagement": true,
+    "nativeSubagents": true,
+    "customAgents": false,
+    "customSkills": false,
+    "customPlugins": false,
+    "customMcp": false,
+    "customInstructions": false
+  },
+  "evaluation": {
+    "network": "must_be_disabled_for_benchmark",
+    "traceOutsideWorkingRepository": true
+  }
+}
